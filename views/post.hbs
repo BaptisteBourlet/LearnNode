@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>{{hello}}Users list</h1>
+        {{#each data}}
+        <div class="space">
+        <h4>Firstname : {{this.firstname}} <br>Lastname : {{this.lastname}}</h4>
+        <p>Age : {{this.age}}</p>
+        <p>Email : {{this.email}}</p>
+        </div>
+        {{/each}}
+        <a href="/inscription"><button>inscription</button></a>
+        <script src="js/showPerson.js"></script>
+</body>
+</html>
